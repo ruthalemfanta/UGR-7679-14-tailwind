@@ -7,100 +7,135 @@
     <title>Ruth Alemfanta - Portfolio</title>
     <link rel="icon" href="../src/images/logo.png" type="image/jpng">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-                <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-                <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-
-            </ul>
+    <header class="px-3">
+        <nav class="flex justify-between items-center w-[92%]">
+            <div>
+                <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
+            </div>
+            <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 ">
+                <ul class="flex md:flex-row flex-col p-8 md:items-center md:gap-[4vw] gap-8">
+                    
+                    <li class="text-purple-900 hover:text-blue-500 hover:bg-purple-900 rounded-full uppercase p-3"><a href="home.html">Home</a></li>
+                    <li class="text-purple-900 hover:text-blue-500 hover:bg-purple-900 rounded-full uppercase p-3"><a href="aboutme.html">About me</a></li>
+                    <li class="text-blue-500 bg-purple-900 rounded-full uppercase p-3"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="text-purple-900 hover:text-blue-500 hover:bg-purple-900 rounded-full uppercase p-3"><a href="resume.html">Resume</a></li>
+                    <li class="text-purple-900 hover:text-blue-500 hover:bg-purple-900 rounded-full uppercase p-3"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="p-8 hidden md:block">
+                <a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin bg-purple-900 p-2 rounded-full text-blue-500 w-fit m-1" target="_blank"></a>
+                <a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram bg-purple-900 p-2 rounded-full text-blue-500 w-fit m-1" target="_blank"></a>
+                <a href="https://x.com/fauxroot?s=35" class="fa fa-twitter bg-purple-900 p-2 rounded-full text-blue-500 w-fit m-1" target="_blank"></a>
+                <a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat bg-purple-900 p-2 rounded-full text-blue-500 w-fit m-1" target="_blank"></a>
+            </div>
+            <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl text-purple-900 md:hidden"></ion-icon>  
+                
         </nav>
     </header>
 
     <main>
-        <section class="portfolio-image">
+        <section class="text-center bg-purple-600 font-bold text-8xl p-30 md:p-60">
             <h1>PORTFOLIO</h1>
         </section>
              
-            <section class="works-webdev">
-                <h2> <i class="fa fa-code" aria-hidden="true"></i> Web Development</h2>
-                <p>I've been curious about web pages and how they worked since I intracted with one. It was in 11th grade when i first developed them, as a graded assignment. I've been experimenting with their making ever since. </p>
+           <div class="flex flex-col sm:grid grid-cols-2 p-10">
+            <section class="p-3">
+                <h2 class="text-purple-900 text-4xl py-3"> <i class="fa fa-code" aria-hidden="true"></i> Web Development</h2>
+                <p class="text-xl border-b-2 border-purple-900 p-3">I've been curious about web pages and how they worked since I intracted with one. It was in 11th grade when i first developed them, as a graded assignment. I've been experimenting with their making ever since. </p>
             </section>
-            <section class="works-app">
-                <h2><i class="fa fa-apple" aria-hidden="true"></i> Applications</h2>
-                <p>Thanks to the the courses I took Freshman year I've been equiped with the necessarry tools to create apps to anyone's liking</p>
+            <section class="p-3">
+                <h2 class="text-purple-900 text-4xl py-3"><i class="fa fa-apple" aria-hidden="true"></i> Applications</h2>
+                <p class="text-xl border-b-2 border-purple-900 p-6">Thanks to the the courses I took Freshman year I've been equiped with the necessarry tools to create apps to anyone's liking</p>
             </section>
 
-            <section class="works-photography">
-                <h2><i class="fa fa-camera-retro" aria-hidden="true"></i> Photography</h2>
-                <p>Among the many things I was known for was capturing my moments. My need to preserve memories improved my ability to interact with camera lenses. I've now taken a tonne of professional pictures that meet my clients' expectations.                </p>
+            <section class="p-3">
+                <h2 class="text-purple-900 text-4xl py-3"><i class="fa fa-camera-retro" aria-hidden="true"></i> Photography</h2>
+                <p class="text-xl border-b-2 border-purple-900 p-5">Among the many things I was known for was capturing my moments. My need to preserve memories improved my ability to interact with camera lenses. I've now taken a tonne of professional pictures that meet my clients' expectations.                </p>
             </section>
-            <section class="works-cooking">
-                <h2><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</h2>
-                <p>Very random, but yes im a part-time skilled cook. From preparing it to eating it, food has always played a significant role in my life. I hate to say it, but it's similar to therapy. I've filled in for friends and a few clients when my expertise was needed.
+            <section class="p-3">
+                <h2 class="text-purple-900 text-4xl py-3"><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</h2>
+                <p class="text-xl border-b-2 border-purple-900 p-3">Very random, but yes im a part-time skilled cook. From preparing it to eating it, food has always played a significant role in my life. I hate to say it, but it's similar to therapy. I've filled in for friends and a few clients when my expertise was needed.
                 </p>
             </section>
+           </div>
 
 
 
-        <section class="myworks">
-                <h2>My Works</h2>
-            <div class="webdev">
-                <h2>Web Development</h2>
-                <img class="websites" src="../src/images/neaty.png" alt="Neaty website" height="100"  title="Website I made for Neaty">
-                <img class="websites" src="../src/images/matthew.png" alt="Matthew Perry tribute page" height="100"  title="Website I made for Matthew Perry tribute.">
-                <img class="websites" src="../src/images/p2.png" alt="second page of the tribute" height="100" title="second page">
-                <img class="websites" src="../src/images/Midnight.png" alt="Midnight" height="100" title="Website I made for Midnight">
-                <img class="websites" src="../src/images/clemo.png" alt="Clemo" height="100" title="Website I made for Clemo">
-                <img class="websites" src="../src/images/auro.png" alt="Auro" height="100" title="Website I made for Auro">
-                <img class="websites" src="../src/images/picolo.png" alt="Picolo" height="100" title="Website I made for picolo">
+        <section class="bg-black">
+                <h2 class="p-6 text-6xl text-purple-300">My Works</h2>
+               
+            <div>
+                <h2 class="p-6 text-3xl text-white">Web Development</h2>
+                <div class="flex flex-row items-center  slider-container">
+                    <i class="fa fa-angle-left text-white text-6xl slider-icon" aria-hidden="true" id="scroll-left"></i>
+                    <div class="flex space-x-4 slider-content overflow-x-auto" id="image-container" >
+                    <img class="w-64" src="../src/images/neaty.png" alt="Neaty website" height="100" title="Website I made for Neaty">
+                    <img class="w-64" src="../src/images/matthew.png" alt="Matthew Perry tribute page" height="100" title="Website I made for Matthew Perry tribute.">
+                    <img class="w-64" src="../src/images/p2.png" alt="second page of the tribute" height="100" title="second page">
+                    <img class="w-64" src="../src/images/Midnight.png" alt="Midnight" height="100" title="Website I made for Midnight">
+                    <img class="w-64" src="../src/images/clemo.png" alt="Clemo" height="100" title="Website I made for Clemo">
+                    <img class="w-64" src="../src/images/auro.png" alt="Auro" height="100" title="Website I made for Auro">
+                    <img class="w-64" src="../src/images/picolo.png" alt="Picolo" height="100" title="Website I made for picolo">
+                    </div>
+                    <i class="fa fa-angle-right text-white text-6xl slider-icon" aria-hidden="true" id="scroll-right"></i>
+                </div>
             </div>
-
-            <div class="applications">
-                <h2>Applications</h2>
-                <img src="../src/images/countdownapp.jpeg" alt="countdownapp" height="100">
-                <img src="../src/images/calculator.jpeg" alt="calculator" height="100">
-
-            </div>
-
-            <div class="photography">
-                <h2>Photography</h2>
-                <img class="photograph-por" src="../src/images/books.jpg" alt="books" height="100">
-                <img class="photograph-por" src="../src/images/ceiling.jpeg" alt="ceilings" height="100">
-                <img class="photograph-por" src="../src/images/clouds.jpeg" alt="clouds" height="100">
-                <img class="photograph-por" src="../src/images/fog.jpeg" alt="fog" height="100">
-                <img class="photograph-por" src="../src/images/forest.jpeg" alt="forest" height="100">
-                <img class="photograph-por" src="../src/images/glass.jpeg" alt="glass" height="100">
-                <img class="photograph-por" src="../src/images/moon.jpeg" alt="moon" height="100">
-                <img class="photograph-por" src="../src/images/road.jpeg" alt="road" height="100">
-                <img class="photograph-por" src="../src/images/shoes.jpeg" alt="shoes" height="100">               
-                <img class="photograph-por" src="../src/images/p1.jpg" alt="photo" height="100"> 
-                <img class="photograph-por" src="../src/images/client1.jpeg" alt="client photo" height="100">
-
+            <div >
+                <h2 class="p-6 text-3xl text-white">Applications</h2>
+               <div class="flex flex-row items-center slider-container">
+                    <i class="fa fa-angle-left text-white text-6xl slider-icon" aria-hidden="true" id="scroll-left"></i>
+                    <div class="flex space-x-4 overflow-x-auto slider-content">
+                        <img class="w-64" src="../src/images/countdownapp.jpeg" alt="countdownapp" height="100">
+                        <img class="w-64" src="../src/images/calculator.jpeg" alt="calculator" height="100">
+                    </div>
+                    <i class="fa fa-angle-right text-white text-6xl slider-icon" aria-hidden="true" id="scroll-right"></i>
+               </div>
             </div>
 
             <div>
-                <h2>Cooking</h2>
-                <img class="foods" src="../src/images/avocadosalad.jpeg" alt="avocadosalad" height="100">
-                <img class="foods" src="../src/images/brocollichicken.jpeg" alt="brocollichicken" height="100">
-                <img class="foods" src="../src/images/cabornaro.jpeg" alt="cabornaro" height="100">
-                <img class="foods" src="../src/images/chicken.jpeg" alt="chicken" height="100">
-                <img class="foods" src="../src/images/chocolate.jpeg" alt="chocolate" height="100">
-                <img class="foods" src="../src/images/currychicken.jpeg" alt="currychicken" height="100">
-                <img class="foods" src="../src/images/donut.jpeg" alt="donut" height="100">
-                <img class="foods" src="../src/images/waffle.jpeg" alt="waffle" height="100">
+                <h2 class="p-6 text-3xl text-white">Photography</h2>
+               <div class="flex flex-row items-center slider-container ">
+                    <i class="fa fa-angle-left text-white text-6xl slider-icon" aria-hidden="true" id="scroll-left"></i>
+                    <div class="flex space-x-4 overflow-x-auto slider-content">
+                        <img class="w-64" src="../src/images/books.jpg" alt="books" height="100">
+                        <img class="w-64" src="../src/images/ceiling.jpeg" alt="ceilings" height="100">
+                        <img class="w-64" src="../src/images/clouds.jpeg" alt="clouds" height="100">
+                        <img class="w-64" src="../src/images/fog.jpeg" alt="fog" height="100">
+                        <img class="w-64" src="../src/images/forest.jpeg" alt="forest" height="100">
+                        <img class="w-64" src="../src/images/glass.jpeg" alt="glass" height="100">
+                        <img class="w-64" src="../src/images/moon.jpeg" alt="moon" height="100">
+                        <img class="w-64" src="../src/images/road.jpeg" alt="road" height="100">
+                        <img class="w-64" src="../src/images/shoes.jpeg" alt="shoes" height="100">               
+                        <img class="w-64" src="../src/images/p1.jpg" alt="photo" height="100"> 
+                        <img class="w-64" src="../src/images/client1.jpeg" alt="client photo" height="100">
+                    </div>
+                     <i class="fa fa-angle-right text-white text-6xl slider-icon" aria-hidden="true" id="scroll-right"></i>
+               </div>
+            </div>
+            
+            <div>
+                <h2 class="p-6 text-3xl text-white">Cooking</h2>
+               <div class="flex flex-row items-center slider-container">
+                    <i class="fa fa-angle-left text-white text-6xl slider-icon" aria-hidden="true" id="scroll-left"></i>
+                    <div class="flex space-x-4 overflow-x-auto slider-content ">
+                        <img class="w-64" src="../src/images/avocadosalad.jpeg" alt="avocadosalad" height="100">
+                        <img class="w-64" src="../src/images/brocollichicken.jpeg" alt="brocollichicken" height="100">
+                        <img class="w-64" src="../src/images/cabornaro.jpeg" alt="cabornaro" height="100">
+                        <img class="w-64" src="../src/images/chicken.jpeg" alt="chicken" height="100">
+                        <img class="w-64" src="../src/images/chocolate.jpeg" alt="chocolate" height="100">
+                        <img class="w-64" src="../src/images/currychicken.jpeg" alt="currychicken" height="100">
+                        <img class="w-64" src="../src/images/donut.jpeg" alt="donut" height="100">
+                        <img class="w-64" src="../src/images/waffle.jpeg" alt="waffle" height="100">
+                    </div>
+                    <i class="fa fa-angle-right text-white text-6xl slider-icon" aria-hidden="true" id="scroll-right"></i>
+               </div>
             </div>
 
 
@@ -108,24 +143,33 @@
 
     </main>
 
-    <footer>
-        <h2> <a href="contact.html">Let's Link</a></h2>
-        <h2>Socials</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-            <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-            <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-            <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-        </ul>
-        <h2>Address</h2>
-        <address>
-            <ul>
-                <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
-                <li><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
-                <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
-            </ul>
-        </address>
-    </footer>
+    <footer class="flex flex-col sm:grid grid-cols-2 bg-purple-950 text-blue-500">
+        <div class="p-10 text-center text-7xl">
+             <h2> <a class="font-bold hover:bg-blue-500 hover:text-purple-900" href="contact.html" target="_blank">Let's Link</a></h2>
+        </div>
+        <div class="flex gap-20">
+             <div>
+                 <h2 class="py-2 text-2xl font-bold">Socials</h2>
+                 <ul>
+                     <li class="bg-blue-500 text-purple-900 w-fit p-2 rounded-full m-1"><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
+                     <li class="bg-blue-500 text-purple-900 w-fit p-2 rounded-full m-1"><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
+                     <li class="bg-blue-500 text-purple-900 w-fit p-2 rounded-full m-1"><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
+                     <li class="bg-blue-500 text-purple-900 w-fit p-2 rounded-full m-1"><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
+                 </ul>
+             </div>
+             <div>
+                 <h2  class="py-2 text-2xl font-bold">Address</h2>
+                  <address>
+                     <ul>
+                         <li class="bg-blue-500 text-purple-900 w-fit p-2 rounded-full m-1"><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
+                         <li class="bg-blue-500 text-purple-900 w-fit p-2 rounded-full m-1"><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
+                         <li class="bg-blue-500 text-purple-900 w-fit p-2 rounded-full m-1"><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
+                     </ul>
+                 </address>
+             </div>
+        </div>
+     </footer>
+     <script src="../src/js/script.js"></script>
     
 </body>
 </html>
